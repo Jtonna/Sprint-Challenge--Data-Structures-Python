@@ -51,3 +51,18 @@ class RingBuffer:
     # Returns the list
     returnable = list(filter(None, self.storage))
     return returnable
+
+#buffer = RingBuffer(7)
+#print(f"1: {len(buffer.storage)}")
+#print(f"2: {buffer.append('a')} - {buffer.current} - {buffer.storage}")
+#print(f"3: {buffer.append('b')} - {buffer.current} - {buffer.storage}")
+#print(f"4: {buffer.append('c')} - {buffer.current} - {buffer.storage}")
+#print(f"5: {buffer.append('d')} - {buffer.current} - {buffer.storage}")
+#print(f"6: {buffer.append('e')} - {buffer.current} - {buffer.storage}")
+#print(f"7: {buffer.append('f')} - {buffer.current} - {buffer.storage}")
+#print(f"8: {buffer.append('g')} - {buffer.current} - {buffer.storage}")
+#print(f"9: {buffer.append('h')} - {buffer.current} - {buffer.storage}")
+#print(f"10: {buffer.append('i')} - {buffer.current} - {buffer.storage}")
+#print(f"11: {len(buffer.storage)}")
+#print(buffer.storage)
+#print(buffer.get())
