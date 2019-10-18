@@ -51,4 +51,5 @@ class RingBuffer:
       self.current += 1
 
   def get(self):
-    pass
+    # Returns the list
+    returnable = list(filter(None, self.storage))
