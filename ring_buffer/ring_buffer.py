@@ -1,3 +1,7 @@
+# Plan ---
+# Ring buffers are a FIFO -> First in First Out system.
+# 
+
 class RingBuffer:
   def __init__(self, capacity):
     self.capacity = capacity
