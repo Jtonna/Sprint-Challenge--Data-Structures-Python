@@ -29,12 +29,26 @@ class RingBuffer:
     self.storage = [None]*capacity
 
   def append(self, item):
-    if 1+1 == 1:
-      pass
-    elif 1 + 1 == 2:
-      pass
+    remove_current = self.storage.pop(self.current)
+    insert_in_current_with_item = self.storage.insert(self.current, item)
+
+    #  If current is none do thing
+    if self.storage[self.current] == None:
+      # Remove from last peice of entered data (end of list), add new data at the current index, current + 1
+      remove_current()
+      insert_in_current_with_item()
+      self.current += 1
+    #  If current is the capacity 
+    elif self.current == self.capacity:
+      #  Remove 0 index just incase, insert the item into the first index, set current to 1
+      self.storage.pop(0)
+      self.storage.insert(0, item)
+      self.current = 1
     else:
-      pass
+      #  If none of those conditions are true, we remove current, insert current and increment
+      remove_current()
+      insert_in_current_with_item()
+      self.current += 1
 
   def get(self):
     pass
