@@ -48,8 +48,13 @@ class LinkedList:
 
     current_node = self.head
     next_node = self.head.next
-    prev_node = None
+    previous_node = None
     
     while current_node is not None:
-      # Node Juggling
-      pass
+      # Node Juggling loop
+      next_node = current_node.next_node
+      current_node.next_node = previous_node
+      previous_node = current_node
+      current_node = next_node
+    
+    self.head = previous_node
