@@ -50,3 +50,4 @@ class RingBuffer:
   def get(self):
     # Returns the list
     returnable = list(filter(None, self.storage))
+    return returnable
