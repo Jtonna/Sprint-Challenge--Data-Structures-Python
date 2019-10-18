@@ -29,7 +29,12 @@ class RingBuffer:
     self.storage = [None]*capacity
 
   def append(self, item):
-    pass
+    if 1+1 == 1:
+      pass
+    elif 1 + 1 == 2:
+      pass
+    else:
+      pass
 
   def get(self):
     pass
