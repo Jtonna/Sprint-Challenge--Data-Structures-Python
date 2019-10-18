@@ -51,7 +51,8 @@ class LinkedList:
     previous_node = None
     
     while current_node is not None:
-      # Node Juggling loop
+      # Node Juggling Recursion loop that does the following
+      # Next node -> current node.next node -> previous node -> current node -> Next node
       next_node = current_node.next_node
       current_node.next_node = previous_node
       previous_node = current_node
