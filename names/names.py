@@ -16,6 +16,13 @@ f.close()
 
 duplicates = []
 
+""" Original Code Runtime O(n^2)
+for name_1 in names_1: # The runtime complex depends ont he ammount of names we input O(n)
+    for name_2 in names_2: # The runtime complex is the same as above because of the same reason O(n)
+        if name_1 == name_2:
+            duplicates.append(name_1)
+"""
+
 # Call the tree and pass it the names_1[0]
 # for loop that inserts the name into the tree
 # for loops that checks if the tree contains a name
